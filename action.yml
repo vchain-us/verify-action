@@ -1,0 +1,10 @@
+name: 'Verify commit'
+description: 'Verify the authenticity of commit with CodeNotary.io'
+    
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+branding: 
+  icon: 'git-commit'
+  color: blue
