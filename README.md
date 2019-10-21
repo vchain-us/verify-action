@@ -1,5 +1,4 @@
-# verify-action
-> Verify the authenticity of your commits with CodeNotary.io
+# Verify the authenticity of your commits with [CodeNotary.io](https://codenotary.io)
 
 You can sign your work locally using the CodeNotary [vcn](https://github.com/vchain-us/vcn) tool (ie. `vcn notarize git://.`). This action will verify these signatures so other people will know that your commits come from a trusted source.
 
