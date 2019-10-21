@@ -1,9 +1,20 @@
 name: 'Verify commit'
 description: 'Verify the authenticity of commit with CodeNotary.io'
-    
+
+inputs:
+  signerID:
+    description: 'List of SignerID(s) (separated by space) to authenticate against'
+    required: false
+  org:
+    description: 'Organization''s ID to authenticate against'
+    required: true
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  env:
+    VCN_SIGNERID: ${{ inputs.signerID }}
+    VCN_ORG: ${{ inputs.org }}
 
 branding: 
   icon: 'git-commit'
