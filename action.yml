@@ -1,5 +1,5 @@
 name: 'Verify commit'
-description: 'Verify the authenticity of commit with CodeNotary.io'
+description: 'Verify the authenticity of your commits with CodeNotary.io'
 
 inputs:
   signerID:
@@ -9,7 +9,7 @@ inputs:
     description: 'Organization''s ID to authenticate against'
     required: false
   path:
-    description: 'Path to git working directory (default to current dir)'
+    description: 'Default to the current directory'
     required: false
     default: '.'
 
@@ -22,5 +22,5 @@ runs:
     VCN_ORG: ${{ inputs.org }}
 
 branding: 
-  icon: 'git-commit'
+  icon: 'check'
   color: blue
