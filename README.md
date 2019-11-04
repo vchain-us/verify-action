@@ -5,6 +5,7 @@ You can sign your work locally using the CodeNotary [vcn](https://github.com/vch
 
 <img width="50%" src="docs/commit-check.png" />
 
+
 # Usage
 
 Create a workflow `.yml` file in your repositories `.github/workflows` directory (eg. `.github/workflows/verify.yml`). In your workflow  you first need to checkout your repository then use this action:
