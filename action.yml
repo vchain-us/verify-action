@@ -15,7 +15,7 @@ inputs:
 
 runs:
   using: 'docker'
-  image: 'docker://codenotary/vcn:0.7' 
+  image: 'docker://codenotary/vcn:0.9' 
   args: ["a", "git://${{ inputs.path }}"]
   env:
     VCN_SIGNERID: ${{ inputs.signerID }}
